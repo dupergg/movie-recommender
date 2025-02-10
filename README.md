@@ -165,12 +165,10 @@ The following links are the sources that I followed and the dataset that I used
 for the project.
 
 Ahmed, Ibtesam. “Getting Started with a Movie Recommendation System.”
-Kaggle, Kaggle, 2 Feb. 2024, www.kaggle.com/code/ibtesama/getting-
-started-with-a-movie-recommendation-system.
+Kaggle, Kaggle, 2 Feb. 2024, www.kaggle.com/code/ibtesama/getting-started-with-a-movie-recommendation-system.
 
 Banik, Rounak. “Movie Recommender Systems.” Kaggle, Kaggle, 6 Nov.
-2017, www.kaggle.com/code/rounakbanik/movie-recommender-
-systems.
+2017, www.kaggle.com/code/rounakbanik/movie-recommender-systems.
 
 Banik, Rounak. “The Movies Dataset.” Kaggle, 10 Nov. 2017,
 www.kaggle.com/datasets/rounakbanik/the-movies-dataset/data.
