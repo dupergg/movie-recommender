@@ -34,23 +34,26 @@ The first movie recommendation method is an extremely simple, bare bones,
 and basic recommender. It simply orders the highest rated movies out of the
 dataset of 45,000+ movies using a formula by IMDb, weighted rating:
 
-[IMAGE HERE]
+![](images/image0)
 
 where ‘v’ is the number of votes for a movie, ‘m’ is the minimum required
 votes to be listed in a chart, ‘R’ is the average rating for a movie, and ‘C’ is
 the average of the votes across the whole report. The way this can be
 calculated in code is as follows:
 
-[IMAGE HERE]
+![](images/image1)
 
 This function allows us to get a list of movies that are popular and rated
 highly based on the average ratings and amount of them. The list can bye
 thought of a “popular movies” list or a trending list of movies.
+
+![](images/image2)
+
 This weighted rating function can be reused to then search for best rated
 movies based on an input genre, instead of a title. Below is a search for
 “Romance” movies:
 
-[IMAGE HERE]
+![](images/image3)
 
 The next method approaches the problem of recommending movies based on
 their descriptions. This is accomplished by using “Term Frequency-Inverse
@@ -63,13 +66,13 @@ is a word or term in the description vocabulary, where each row is a movie.
 The next step is to calculate a similarity score. There isn’t one right way to
 calculate this, but the implementation in the project is using cosine similarity:
 
-[IMAGE HERE]
+![](images/image4)
 
 An example of a function that uses the cosine similarity is a method that is
 used to recommend movies based on the title of the movie, using the terms in
 the movie’s description to recommend movies with similar terms:
 
-[IMAGE HERE]
+![](images/image5)
 
 Going further with this method, we can alter the function that is used to
 recommend movies to use the cast, crew, and genres to give us another set of
@@ -82,14 +85,15 @@ Vectorizer” is used instead as to not weigh down the director of the movies. A
 new cosine similarity is used and then the above function is reused to make a
 recommendation:
 
-[IMAGE HERE]
+![](images/image6)
+![](images/image7)
 
 This method can still be improved further. The function can be changed to
 include the weighted rating from the Simple Recommender. This allows the
 function to use the scores from the weighted rating and then the
 recommender that uses metadata:
 
-[IMAGE HERE]
+![](images/image8)
 
 The third and fourth methods for recommending movies are a bit more
 personal to the user, rather than being more general. With “Collaborative
@@ -119,14 +123,14 @@ recommendation for every user ID will be different. This method displays the
 recommendations in order from their scores on how accurate the model is
 predicting the user to be interested in the recommended movies.
 
-[IMAGE HERE]
+![](images/image9)
 
 For user ID 1, with the movie ‘Avatar’ being the movie we are searching for
 recommendations for, we see that ‘T2 3-D: Battle Across Time’ is the highest
 predicted movie to recommend to our user with subsequent recommendations
 following it in order of score.
 
-[IMAGE HERE]
+![](images/image10)
 
 For user ID 500, with the movie ‘Toy Story 2’ being the movie we are
 searching for recommendations for, we see that ‘Toy Story 3’ is the highest
